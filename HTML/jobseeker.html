@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vandelay Industries</title>
+    
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/Style.css">  
+    
+</head>
+<body>
+
+
+    <!-- NAVIGATIONS -->
+
+<div class="header">
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="../Images/wip_vandelay_logo-removebg-preview.png" width="175px" height="120px">
+            
+        </div>
+        <nav class="ul">
+            <ul>
+                        <li><a href="../HTML/homepage.html" class="navhover">Home</a></li>
+                        <li><a href="../HTML/jobseeker.html" class="navhover ">Job Seeker</a></li> 
+                        <li><a href="../HTML/application.html" class="navhover ">Application</a></li> 
+                        <li><a href="../HTML/contact.html" class="navhover ">Contact Us</a></li> 
+                        <li><a href="../HTML/aboutus.html" class="navhover">About Us</a></li>
+
+            </ul>
+        </nav>
+    
+     </div>
+
+     <!-- LA BOITE POUR LE HAUT DE LA PAGE AVEC LA PHOTO DE PERSONNAGE ET AUSSI LA PHRASE PRINCIPALE DU SITE -->
+    
+    <div class="row">
+        <div class="col-2">
+            <h1>Vandelay Industries,<br>  </h1>
+            <p>Your Number One Job Finder Website ,
+            <br>With the best data and insight you need to find the best work possible, we take your future seriously and only offer the best opportunities in the field.</p>
+    
+               
+        </div>
+      
+        <div class="col-2">
+            <img src="../Images/jobseeker.jpg">
+        </div>
+    </div>
+  </div>
+</div>
+
+ 
+
+        <!-- Title h1 with marquee Balise  -->
+   <marquee><h1 class="h1-title">Vanderlay Inc : Your first step for Working</h1></marquee> 
+    <br/>
+
+
+    
+    <!-- Job Search  Form -->
+    <form class="job_filters">
+      <div class="search_jobs">
+        <div class="search_keywords">
+          <input
+            type="text"
+            name="search_keywords"
+            id="search_keywords"
+            placeholder="Keywords"
+            value=""
+            data-ddg-inputtype="unknown"
+          />
+        </div>
+
+        <div class="search_location">
+          <input
+            type="text"
+            name="search_location"
+            id="search_location"
+            placeholder="Location"
+            value=""
+            data-ddg-inputtype="unknown"
+          />
+        </div>
+
+        <div class="search_remote_position">
+          <input
+            type="checkbox"
+            class="input-checkbox"
+            name="remote_position"
+            id="remote_position"
+            placeholder="Location"
+            value="1"
+          />
+          <label for="remote_position" id="remote_position_label"
+            >Remote positions only</label
+          >
+        </div>
+
+        <!-- <div style="clear: both"></div> -->
+
+        <div class="search_submit">
+          <input class ='search_submit1' type="submit" value="Search Jobs" />
+        </div>
+      </div>
+
+      <ul class="job_types">
+        <li>
+          <label for="job_type_freelance" class="freelance"
+            ><input
+              type="checkbox"
+              name="filter_job_type[]"
+              value="freelance"
+              checked="checked"
+              id="job_type_freelance"
+            />
+            Freelance</label
+          >
+        </li>
+        <li>
+          <label for="job_type_full-time" class="full-time"
+            ><input
+              type="checkbox"
+              name="filter_job_type[]"
+              value="full-time"
+              checked="checked"
+              id="job_type_full-time"
+            />
+            Full Time</label
+          >
+        </li>
+        <li>
+          <label for="job_type_internship" class="internship"
+            ><input
+              type="checkbox"
+              name="filter_job_type[]"
+              value="internship"
+              checked="checked"
+              id="job_type_internship"
+            />
+            Internship</label
+          >
+        </li>
+        <li>
+          <label for="job_type_part-time" class="part-time"
+            ><input
+              type="checkbox"
+              name="filter_job_type[]"
+              value="part-time"
+              checked="checked"
+              id="job_type_part-time"
+            />
+            Part Time</label
+          >
+        </li>
+        <li>
+          <label for="job_type_temporary" class="temporary"
+            ><input
+              type="checkbox"
+              name="filter_job_type[]"
+              value="temporary"
+              checked="checked"
+              id="job_type_temporary"
+            />
+            Temporary</label
+          >
+        </li>
+      </ul>
+      <input type="hidden" name="filter_job_type[]" value="" />
+      <div class="showing_jobs" style="display: none"></div>
+    </form>
+
+
+
+    <!-- Job Search  Full and Part Time  -->
+    <div class="container-job">
+       
+      <section class="flex">
+        <div class="child">
+          <h4>
+            Latex Salesman
+            Salaries near Canada
+          </h4>
+          <p class="gray-text" >Sales Representative</p>
+          <details>
+            <summary>See More</summary>
+            <p class="gray-text">
+              Sales representatives spend their day on the phone contacting new and existing customers to sell the company's products.
+               Reps typically travel to customers for face-to-face meetings. These individuals must also have the drive to generate new leads.
+            </p>
+          </details>
+        </div>
+
+        <div class="child">
+          <h5 class="gray-text">Cambridge/KW,ON</h5>
+        </div>
+
+        <div class="child">
+          <h5 class="full-time">Full Time</h5>
+          Posted on November 24, 2023
+        </div>
+      </section>
+
+      <section class="flex">
+        <div class="child">
+          <h4>
+            Senior Sales Representative
+          </h4>
+          <p class="gray-text">Universal Staffing In</p>
+          <details>
+            <summary>See More</summary>
+            <p class="gray-text">
+              Senior sales representatives drive company sales by continually identifying new sales opportunities and maintaining existing customer relationships.
+               They lead less experienced sales representatives and develop sales pipelines to manage sales quotas.
+            </p>
+          </details>
+        </div>
+
+        <div class="child">
+          <h5 class="gray-text">Cambridge/KW,ON</h5>
+        </div>
+
+        <div class="child">
+          <h5 class="full-time">Full Time</h5>
+          Posted on November 24, 2023
+        </div>
+      </section>
+
+      <section class="flex">
+        <div class="child">
+          <h4>
+            Sales Representative IV
+          </h4>
+          <p class="gray-text">Universal Staffing In</p>
+          <details>
+            <summary>See More</summary>
+            <p class="gray-text">
+              
+Sales representatives are responsible for selling a company's products by identifying leads,
+ educating prospects on products through calls, trainings, and presentations, 
+ and providing existing customers with exceptional support. Sales representatives are either inside or outside sales reps.
+  Inside sales reps sell products over the phone and online, while outside sales reps sell products through face-to-face meetings. 
+  Sales reps span almost every industry.
+
+Most sales reps have a Bachelor's degree in business or a related field. 
+The best sales representatives understand the importance of strong customer service, have a knack for closing deals, and are self-assured.
+            </p>
+          </details>
+        </div>
+
+        <div class="child">
+          <h5 class="gray-text">Cambridge/KW,ON</h5>
+        </div>
+
+        <div class="child">
+          <h5 class="full-time">Full Time</h5>
+          Posted on November 24, 2023
+        </div>
+      </section>
+
+      <section class="flex">
+        <div class="child">
+          <h4>
+            Outside Sales Representative
+          </h4>
+          <p class="gray-text">Universal Staffing In</p>
+          <details>
+            <summary>See More</summary>
+            <p class="gray-text">
+              Also known as field sales representatives, outside sales representatives close sales through face-to-face interaction with customers based within assigned sales territories.
+               They meet with potential and existing customers to present sales proposals, inform them of product benefits and features, and negotiate prices..
+            </p>
+          </details>
+        </div>
+
+        <div class="child">
+          <h5 class="gray-text">Cambridge/KW,ON</h5>
+        </div>
+
+        <div class="child">
+          <h5 class="part-time">Part Time</h5>
+          Posted on November 24, 2023
+        </div>
+      </section>
+    </div>
+<!-- footer -->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Contact Us Via Email : </h3>
+                <a href="mailto:info@vandelayind.com" class="email">info@vandelayind.com</a>
+                
+                <p>1435 Elford St, Victoria, BC, V8S3S9, CAN</p>
+                <p>Phone : (555)555-5555 </p>
+        
+            </div>
+            <div class="footer-col-2">
+                <img src="../Images/wip_vandelay_logo-removebg-preview.png">
+                <p>A Place You Want To Be !  </p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Explore</h3>
+                <ul>
+                    <li>Career</li>
+                   <li>Contact Us</li>
+                    <li>Return Policy</li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follows Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter / X</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <!-- ceci represente la ligne en bas au dessus du copyright -->
+        <hr>
+        <p class="copyright">Vandelay Industries © 2023</p>
+    </div>
+</div>
+  </body>
+</html>
+
